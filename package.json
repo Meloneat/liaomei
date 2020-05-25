@@ -1,6 +1,6 @@
 {
   "name": "liaomei",
-  "version": "2.1.0",
+  "version": "1.0.3",
   "description": "a lib with biaobai to girl for a single man",
   "main": "index.js",
   "scripts": {
