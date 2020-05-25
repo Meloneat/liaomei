@@ -1,6 +1,6 @@
 {
   "name": "liaomei",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a lib with biaobai to girl for a single man",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Meloneat/liaomei/issues"
   },
-  "homepage": "https://github.com/Meloneat/liaomei#readme"
+  "homepage": "https://github.com/Meloneat/liaomei#readme",
+  "devDependencies": {
+    "mojs": "^0.2.0"
+  }
 }
