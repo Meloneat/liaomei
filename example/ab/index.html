@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> 
+        <p style="margin: 0 auto;">前奏试着听一听</p>
+        <audio autoplay>
+            <source src="./resource/betternow.mp3" type="audio/mp3" />
+            您的浏览器不支持 audio 标签。</audio>
+    </div>
+    <!-- <script type="text/javascript">
+        function delayPlay() {
+            var mus = document.getElementsByTagName("audio")
+            if(mus && mus[0] && mus[0].paused) {
+                mus[0].paused = false
+                debugger
+                mus[0].play()
+            }
+            mus = null
+        }
+
+        setTimeout(delayPlay,1)
+        
+    </script> -->
+    <script src="./build/test.build.js"></script>
+</body>
+</html>
