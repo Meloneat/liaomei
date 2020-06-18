@@ -1,4 +1,4 @@
-const liaomei = require("../liaomei")
+const liaomei = require("../../../liaomei")
 
 const app = liaomei()
 

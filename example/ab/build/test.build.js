@@ -1,5 +1,5 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-const liaomei = require("../liaomei")
+const liaomei = require("../../../liaomei")
 
 const app = liaomei()
 
@@ -9,8 +9,10 @@ setTimeout(app.init.bind(app),3000)
 
 
 
+
+
 console.log(liaomei.lover,liaomei.insidewords)
-},{"../liaomei":2}],2:[function(require,module,exports){
+},{"../../../liaomei":2}],2:[function(require,module,exports){
 "use struct"
 
 module.exports = require("./lib/liaomei")
@@ -24,8 +26,15 @@ module.exports = animation
 
 
 },{}],4:[function(require,module,exports){
+/**
+ * liaomei
+ * a UI biaobai artifact
+ * 
+ * Copyright(c) meloneat
+ * MIT Licensed
+ */
+'use strict'
 
-// var layout = Object.create(null)
 function layout() {
     
 }
@@ -39,7 +48,9 @@ layout.prototype.init = function(container) {
 layout.prototype.iframelayout = function() {
     let localE = 'body',localP = "beforeend"
     let dde = document.documentElement
-    let src = "https://opensourcerover.jpl.nasa.gov/#!/home"
+    // let src = "https://opensourcerover.jpl.nasa.gov/#!/home"
+    let src = "../../template/ilove.html"
+    let opacity = "0.75"
 
     var iframe = `<iframe
         id="inlineFrame"
@@ -47,7 +58,7 @@ layout.prototype.iframelayout = function() {
         width="${dde.clientWidth}"
         height="${dde.clientHeight}"
         src="${src}"
-        style="z-index:9999 !important;position:fixed;top:0;" 
+        style="z-index:9999 !important;position:fixed;top:0;opacity:${opacity}" 
     >
     </iframe>`
 
@@ -100,7 +111,6 @@ function createFloatlayout() {
          * 2. create brush
          * 3. painting 
          */
-        // Layout.prototype.init.call(process)
         // createBrush
         
 
