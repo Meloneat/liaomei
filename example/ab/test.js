@@ -4,7 +4,10 @@ const app = liaomei()
 
 // init
 // app.init()
-setTimeout(app.init.bind(app),3000)
+debugger
+setTimeout(app.init.bind(app,()=>{
+    
+}),3000)
 
 
 
